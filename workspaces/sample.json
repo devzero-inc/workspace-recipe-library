@@ -2,7 +2,7 @@
   "name": "Sample Workspace",
   "id": 1,
   "cover_image": "https://camo.githubusercontent.com/4f1c7189be171d34a36011cb48f165c4023850598a07e4c9c826531b6705b77e/68747470733a2f2f636c6f75642e676f6f676c652e636f6d2f636f64652f646f63732f7673636f64652f696d616765732f6372656174652d6e65772d6170702e676966",
-  "description": "Get started with DevZero!",
+  "description": "Get started with DevZero! This is a sample recipe containing node. There are also a few spiders in here. Not poisonous ones, mind you, but they do look scary and they're a little mad. Try not to make any sudden movemen- oh no. There were supposed to be 8 in here and I only count 7",
   "repositories": ["https://github.com/tevko/BadDOM"],
   "state": "{\"providers\":[],\"buildImage\":\"ghcr.io\/railwayapp\/nixpacks:ubuntu-1689638612\",\"variables\":{\"CGO_ENABLED\":\"0\",\"NIXPACKS_METADATA\":\"go\"},\"phases\":{\"build\":{\"dependsOn\":[\"install\",\"setup\"],\"cmds\":[\"go build -o out\"],\"cacheDirectories\":[\"\/root\/.cache\/go-build\"]},\"install\":{\"dependsOn\":[\"setup\"],\"cmds\":[\"go mod download\"],\"cacheDirectories\":[\"\/root\/.cache\/go-build\"]},\"setup\":{\"nixPkgs\":[\"go\"],\"nixOverlays\":[],\"nixpkgsArchive\":\"293a28df6d7ff3dec1e61e37cc4ee6e6c0fb0847\"}},\"start\":{\"cmd\":\".\/out\",\"runImage\":\"ubuntu:jammy\"}}"
 }
