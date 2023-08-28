@@ -1,8 +1,8 @@
 {
-  "id": "1",
-  "name": "Recipe 1",
-  "description": "Here is a template for this",
-  "cover_image": "https://placebear.com/700/400",
+  "id": "4",
+  "name": "Recipe 4",
+  "description": "Here is a template for that",
+  "cover_image": "https://picsum.photos/700/400",
   "repos": [
     {
       "name": "devzero-website",
