@@ -23,4 +23,4 @@ jobs:
         uses: GrantBirki/json-yaml-validate@v2.3.0
         with:
           comment: "true" # enable comment mode
-          yaml_schema: ../schemas/schema.yml
+          yaml_schema: schemas/schema.yml
