@@ -1,0 +1,17 @@
+id: "4"
+name: Recipe 4
+description: Here is a template for that
+cover_image: https://picsum.photos/700/400
+repos:
+  - name: devzero-website
+    repo_url: https://github.com/devzero-inc/devzero-website
+author:
+  name: DevZero
+packages:
+  - nodejs-16_x
+  - pnpm-7_x
+  - openssl
+commands:
+  - shell: pnpm i --frozen-lockfile
+    name: install cmd
+    directory: nextjs-pg
