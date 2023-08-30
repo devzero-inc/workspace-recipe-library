@@ -1,0 +1,19 @@
+---
+id:
+  type: string
+name:
+  type: string
+description:
+  type: string
+cover_image:
+  type: string
+  format: uri
+repos:
+  type: array
+author:
+  name:
+    type: string
+packages:
+  type: array
+commands:
+  type: array
