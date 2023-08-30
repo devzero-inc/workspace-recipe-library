@@ -1,0 +1,37 @@
+id: "5"
+name: Recipe 5
+description: Use this recipe if you want something great
+cover_image: https://placebeard.it/700/400
+repos:
+  - name: devinfra-agent
+    repo_url: https://github.com/devzero-inc/devinfra-agent
+  - name: vscode-ext-scratch
+    repo_url: https://github.com/devzero-inc/vscode-ext-scratch
+  - name: did
+    repo_url: https://github.com/devzero-inc/did
+  - name: authproxy
+    repo_url: https://github.com/devzero-inc/authproxy
+  - name: dzadm
+    repo_url: https://github.com/devzero-inc/dzadm
+  - name: dz-cli
+    repo_url: https://github.com/devzero-inc/dz-cli
+  - name: services
+    repo_url: https://github.com/devzero-inc/services
+  - name: dz-helper
+    repo_url: https://github.com/devzero-inc/dz-helper
+  - name: db-shell
+    repo_url: https://github.com/devzero-inc/db-shell
+  - name: terraform
+    repo_url: https://github.com/devzero-inc/terraform
+  - name: privateGPT
+    repo_url: https://github.com/devzero-examples/privateGPT
+author:
+  name: Lauren
+packages:
+  - nodejs-16_x
+  - pnpm-7_x
+  - openssl
+commands:
+  - shell: pnpm i --frozen-lockfile
+    name: install cmd
+    directory: nextjs-pg
