@@ -21,13 +21,9 @@ author:
     type: string
 packages:
   type: array
-  items:
-    type: string
+  items: {}
 commands:
   type: array
   items:
     type: object
-    properties:
-      shell: string
-      name: string
-      directory: string
+    properties: {}
