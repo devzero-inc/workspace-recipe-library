@@ -25,3 +25,4 @@ jobs:
           comment: "true" # enable comment mode
           yaml_schema: schemas/schema.yml
           base_dir: "./workspaces"
+          yaml_as_json: "true"
