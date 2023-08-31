@@ -1,82 +1,30 @@
 ---
-"$ref": "#/definitions/Welcome7"
+properties:
+  id:
+    type: string
+  name:
+    type: string
+  description:
+    type: string
+  cover_image:
+    type: string
+    format: uri
+  repos:
+    type: array
+    items:
+      $ref: "#/definitions/Repo"
+  author:
+    name:
+      type: string
+  packages:
+    type: array
+  commands:
+    type: array
 definitions:
-  Welcome7:
-    type: object
-    additionalProperties: false
-    properties:
-      id:
-        type: string
-        format: integer
-      name:
-        type: string
-      description:
-        type: string
-      cover_image:
-        type: string
-        format: uri
-        qt-uri-protocols:
-          - https
-      repos:
-        type: array
-        items:
-          "$ref": "#/definitions/Repo"
-      author:
-        "$ref": "#/definitions/Author"
-      packages:
-        type: array
-        items:
-          type: string
-      commands:
-        type: array
-        items:
-          "$ref": "#/definitions/Command"
-    required:
-      - author
-      - commands
-      - cover_image
-      - description
-      - id
-      - name
-      - packages
-      - repos
-    title: Welcome7
-  Author:
-    type: object
-    additionalProperties: false
-    properties:
-      name:
-        type: string
-    required:
-      - name
-    title: Author
-  Command:
-    type: object
-    additionalProperties: false
-    properties:
-      shell:
-        type: string
-      name:
-        type: string
-      directory:
-        type: string
-    required:
-      - directory
-      - name
-      - shell
-    title: Command
   Repo:
     type: object
-    additionalProperties: false
     properties:
       name:
         type: string
       repo_url:
         type: string
-        format: uri
-        qt-uri-protocols:
-          - https
-    required:
-      - name
-      - repo_url
-    title: Repo
