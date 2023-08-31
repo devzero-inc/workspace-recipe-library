@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "cover_image": {
+      "type": "string"
+    },
+    "repos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "repo_url": {
+            "type": "string"
+          }
+        },
+        "required": ["name", "repo_url"]
+      }
+    },
+    "author": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": ["name"]
+    },
+    "packages": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "commands": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "shell": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "directory": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "description",
+    "cover_image",
+    "repos",
+    "author",
+    "packages",
+    "commands"
+  ]
+}
