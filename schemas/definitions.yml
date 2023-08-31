@@ -1,0 +1,8 @@
+definitions:
+  Repo:
+    type: object
+    properties:
+      name:
+        type: string
+      repo_url:
+        type: string
