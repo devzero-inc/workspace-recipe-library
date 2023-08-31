@@ -1,26 +1,28 @@
 ---
-id:
-  type: string
-name:
-  type: string
-description:
-  type: string
-cover_image:
-  type: string
-  format: uri
-repos:
-  type: array
-  items:
-    type: object
-    properties:
-      name:
-        type: string
-      repo_url:
-        type: string
-author:
+type: object
+properties:
+  id:
+    type: string
   name:
     type: string
-packages:
-  type: array
-commands:
-  type: array
+  description:
+    type: string
+  cover_image:
+    type: string
+    format: uri
+  repos:
+    type: array
+    items:
+      type: object
+      properties:
+        name:
+          type: string
+        repo_url:
+          type: string
+  author:
+    name:
+      type: string
+  packages:
+    type: array
+  commands:
+    type: array
