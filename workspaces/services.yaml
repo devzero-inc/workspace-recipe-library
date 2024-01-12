@@ -1,0 +1,34 @@
+dev:
+  commands:
+    - command: go mod download
+      directory: services
+      name: install cmd
+    - command: python -m venv --copies ~/.venv && . ~/.venv/bin/activate && pip
+        install poetry==$NIXPACKS_POETRY_VERSION && poetry install --no-dev
+        --no-interaction --no-ansi
+      directory: services/polland
+      name: install cmd
+  name: ""
+  packages:
+    - dz.docker
+    - nixpkgs.direnv
+    - nixpkgs.gcc
+    - nixpkgs.go
+    - nixpkgs.kubernetes
+    - nixpkgs.musl
+    - nixpkgs.musl.dev
+    - nixpkgs.python310
+    - nixpkgs.rustup
+    - nixpkgs.jq
+  repos:
+    - https://github.com/devzero-inc/services
+compute:
+  compute_name: default
+  os_family: UBUNTU_22_04
+  region: us-west-1
+  resources:
+    cpus: 4+
+    disk: 50
+network:
+  category: vm-public
+  network_name: default
