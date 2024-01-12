@@ -1,0 +1,20 @@
+# suggester tool version: 0.0.1+c56de9f4-dirty
+
+dev:
+  name: ""
+  packages:
+  - dz.docker
+  - nixpkgs.gcc
+  - nixpkgs.rustup
+  repos:
+  - https://github.com/rustformers/llm
+compute:
+  compute_name: default
+  os_family: UBUNTU_22_04
+  region: us-west-1
+  resources:
+    cpus: 4+
+    disk: 50
+network:
+  category: vm-public
+  network_name: default
