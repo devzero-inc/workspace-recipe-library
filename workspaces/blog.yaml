@@ -1,0 +1,29 @@
+# suggester tool version: 0.0.1+c56de9f4-dirty
+
+dev:
+  commands:
+  - command: mkdir -p /var/log/nginx && mkdir -p /var/cache/nginx
+    directory: WordPress/wp-admin
+    name: install cmd
+  - command: mkdir -p /var/log/nginx && mkdir -p /var/cache/nginx
+    directory: WordPress/wp-content
+    name: install cmd
+  name: ""
+  packages:
+  - 'nixpkgs.(php.withExtensions (pe: pe.enabled ++ []))'
+  - nixpkgs.libmysqlclient
+  - nixpkgs.nginx
+  - nixpkgs.perl
+  - nixpkgs.phpPackages.composer
+  repos:
+  - https://github.com/WordPress/WordPress
+compute:
+  compute_name: default
+  os_family: UBUNTU_22_04
+  region: us-west-1
+  resources:
+    cpus: 4+
+    disk: 50
+network:
+  category: vm-public
+  network_name: default
