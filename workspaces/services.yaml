@@ -8,7 +8,7 @@ dev:
         --no-interaction --no-ansi
       directory: services/polland
       name: install cmd
-  name: ""
+  name: "DZ Services"
   packages:
     - dz.docker
     - nixpkgs.direnv
