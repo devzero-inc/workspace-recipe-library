@@ -1,7 +1,7 @@
 # suggester tool version: 0.0.1+c56de9f4-dirty
 
 dev:
-  name: ""
+  name: "LLM"
   packages:
   - dz.docker
   - nixpkgs.gcc
