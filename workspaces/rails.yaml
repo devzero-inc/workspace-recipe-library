@@ -26,7 +26,7 @@ dev:
   - command: npm i
     directory: rails/activestorage
     name: install cmd
-  name: ""
+  name: "Rails"
   packages:
   - apt.autoconf
   - apt.bison
