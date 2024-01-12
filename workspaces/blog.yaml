@@ -8,7 +8,7 @@ dev:
   - command: mkdir -p /var/log/nginx && mkdir -p /var/cache/nginx
     directory: WordPress/wp-content
     name: install cmd
-  name: ""
+  name: "Wordpress Blog"
   packages:
   - 'nixpkgs.(php.withExtensions (pe: pe.enabled ++ []))'
   - nixpkgs.libmysqlclient
