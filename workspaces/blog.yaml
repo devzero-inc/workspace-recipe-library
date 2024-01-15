@@ -9,6 +9,8 @@ dev:
     directory: WordPress/wp-content
     name: install cmd
   name: "Wordpress Blog"
+  id: wordpress-blog
+  description: This quick start recipe builds a workspace with an instance of the DevZero's Wordpress blog.
   packages:
   - 'nixpkgs.(php.withExtensions (pe: pe.enabled ++ []))'
   - nixpkgs.libmysqlclient
