@@ -3,6 +3,8 @@ dev:
     - command: yarn install --frozen-lockfile
       directory: devzero-website
       name: install cmd
+      id: devzero-website
+      description: This quick start recipe runs an instance of the DevZero marketing website.
   name: dzwbste
   packages:
     - dz.docker
