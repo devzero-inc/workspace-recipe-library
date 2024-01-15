@@ -2,6 +2,8 @@
 
 dev:
   name: "LLM"
+  id: llm
+  description: This quick start recipe builds a workspace with an instance of LLM.
   packages:
   - dz.docker
   - nixpkgs.gcc
