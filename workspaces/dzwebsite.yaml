@@ -4,6 +4,7 @@ dev:
       directory: devzero-website
       name: install cmd
   name: devzero-website
+  id: devzero-website
   description: This quick start recipe builds a workspace with an instance of the DevZero website.
   packages:
     - dz.docker
