@@ -9,6 +9,8 @@ dev:
       directory: services/polland
       name: install cmd
   name: "DZ Services"
+  id: devzero-services
+  description: This quick start recipe builds a workspace with an instance of the DevZero services repo.
   packages:
     - dz.docker
     - nixpkgs.direnv
