@@ -27,6 +27,8 @@ dev:
     directory: rails/activestorage
     name: install cmd
   name: "Rails"
+  id: rails
+  description: This quick start recipe builds a workspace with an instance of Rails.
   packages:
   - apt.autoconf
   - apt.bison
