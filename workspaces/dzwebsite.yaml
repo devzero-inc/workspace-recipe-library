@@ -3,7 +3,9 @@ dev:
     - command: yarn install --frozen-lockfile
       directory: devzero-website
       name: install cmd
-  name: dzwbste
+  name: devzero-website
+  id: devzero-website
+  description: This quick start recipe builds a workspace with an instance of the DevZero website.
   packages:
     - dz.docker
     - nixpkgs.nodePackages.yarn
