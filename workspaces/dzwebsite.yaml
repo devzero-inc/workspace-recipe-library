@@ -12,16 +12,6 @@ dev:
     - nixpkgs.nodejs_21
   repos:
     - https://github.com/devzero-inc/devzero-website
-compute:
-  compute_name: default
-  os_family: UBUNTU_22_04
-  region: us-west-1
-  resources:
-    cpus: 4+
-    disk: 50
-network:
-  category: vm-public
-  network_name: default
 env:
   - key: ""
     value: ""
