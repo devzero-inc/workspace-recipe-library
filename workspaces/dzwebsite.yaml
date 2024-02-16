@@ -19,9 +19,6 @@ compute:
   resources:
     cpus: 4+
     disk: 50
-network:
-  category: vm-public
-  network_name: default
 env:
   - key: ""
     value: ""
